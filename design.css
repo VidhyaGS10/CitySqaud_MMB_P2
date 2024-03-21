@@ -1,0 +1,459 @@
+body{
+  margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 5px;
+/*     width: 100%; */
+  
+}
+.cell {
+    height: auto;
+}
+
+
+/* for small devices */
+
+@media only screen and (max-width: 600px){
+[class*="col"] {
+    grid-column-end: span 12;
+}
+  .paragraph{
+    justify-self: center;
+}
+}
+
+
+/* for tablets and ipads*/
+
+@media only screen and (min-width: 601px) {
+    .paragraph{
+       padding: 40px 40px 40px 70px;
+       text-align: left;
+    }
+  
+    .md1 {
+        grid-column-end: span 12;
+    }
+    .md2 {
+        grid-column-end: span 6;
+    }
+    .md3 {
+        grid-column-end: span 4;
+    }
+    .md4 {
+        grid-column-end: span 3;
+    }
+    .md6 {
+        grid-column-end: span 2;
+    }
+    .md12 {
+        grid-column-end: span 1;
+    }
+
+}
+
+/* for desktop or bigger screens*/
+
+@media only screen and (min-width: 1025px) {
+    .paragraph{
+       padding: 40px 40px 40px 80px;
+    }
+    .col1 {
+        grid-column-end: span 12;
+    }
+    .col2 {
+        grid-column-end: span 6;
+    }
+    .col3 {
+        grid-column-end: span 4;
+    }
+    .col4 {
+        grid-column-end: span 3;
+    }
+    .col6 {
+        grid-column-end: span 2;
+    }
+    .col12 {
+        grid-column-end: span 1;
+    }
+   
+}
+
+nav{
+  text-align: right;
+  font-size: 16px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+}
+  
+nav ul{
+  list-style-type: none;
+  padding: 15px;
+  margin: 0;
+  float: right;
+}
+
+nav li{
+  text-align: center;
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+}
+
+.navbar{
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #fff;
+  display: inline-block;
+  transition: all 0.7s;
+}
+
+.navbar:hover{
+  color: #fff;
+  background: #333;
+  transform: translateX(0) translateY(-5px);
+}
+
+body{
+overflow-x: hidden;
+}
+
+#nav-trigger{
+  display: none;
+}
+
+input[type=checkbox]{
+ display: none;
+}
+
+.hamburger{
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  color: white;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 801px) {
+.menu{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 150vh;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.navigation{
+  position: fixed;
+  width: 100%;
+  height: 150vh;
+  color: #fff;
+}
+
+nav li{
+  text-align: center;
+  display: block;
+/*   background-color: rgba(0,0,0,0.5); */
+}
+  
+.menu li:hover{
+  display: inline-block;
+  background-color: #ccc;
+  transition: 0.3s ease;
+  transform: translateX(0) translateY(-5px);
+}
+  
+/* .menu li + li{
+  margin-top: 12px;
+} */
+
+input[type=checkbox]:checked ~ .menu{
+  display: block;
+}
+
+.hamburger{
+  display: block;
+}  
+  
+}
+
+.featured{
+  height: 80vh;
+  background: url(imgpage1/networking_1.jpg) center center no-repeat fixed;
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  padding-bottom: 20px; 
+}
+
+.featuredText{
+  font-family: 'Libre Franklin', sans-serif;
+  color: #ffffff;
+  width: 40%;
+  padding: 30px;
+/*   justify-self: end; */
+  align-self: end;
+  text-align: left;
+/*   This is for the text alignment.  */
+/*   margin: 0 auto; */
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+footer{
+  text-align: center;
+  line-height: 34pt;
+  background: #0C8BB0;
+}
+
+footer ul{
+  list-style-type: none;
+  font-family: 'Libre Franklin', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+footer li{
+  text-align: center;
+  display: inline;
+  padding: 0px;
+}
+
+/* this is for the copyright portion in the footer */
+.copyright{
+  font-size: 16px;
+  color: white;
+}
+
+.faqs{
+  line-height: 26pt;
+}
+
+/* this is the contact number part on the contact us part */
+.contactus{
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.bodyText{
+  font-size: 1.5rem;
+  padding: 10px 25px;
+}
+
+/* This is the code for managing the padding of the text on the page */
+.paragraph{
+  align-self: left;
+/*   padding: 30px 30px 30px 100px; */
+  font-size: 14px;
+/*   padding: 150px 40px; */
+/*   justify-content: center; */
+/*   align-content: center; */
+}
+
+/* This is the formating for the images on page 1 that is circular pictures. */
+.homepage {
+  border-radius: 50%;
+/*   padding: 100px 10px; */
+  justify-self: center;
+  margin: 0 auto;
+/*   align-self: center; */
+/*   align-content: center; */
+}
+
+/* This was done to add negative space inside the grid */
+.empty-space{
+  height: 70px;
+}
+
+/* This is the responsive image css */
+.rsp{
+  max-width: 80%;
+  height: auto;
+  justify-self: center;
+}
+
+/* This is the formating done for 1st page images */
+.imgTest{
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+/* These are heading formatting used on all the pages */
+h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  padding: 10px;
+  font-size: 28px;
+  color: #0C8BB0;
+}
+
+h3{
+  font-family: 'Merriweather Sans', sans-serif;
+  padding: 10px;
+  font-size: 24px;
+  color: #0C8BB0;
+}
+
+h4{
+  font-family: 'Merriweather Sans', sans-serif;
+  padding: 10px;
+  font-size: 18px;
+  justify-self: center;
+  color: #0C8BB0;
+}
+
+/* Generalised formatting for the paragraphs */
+p{
+  font-family: 'Libre Franklin', sans-serif;
+/*   font-size: 15px; */
+  padding: 10px;
+  justify-self: center;
+}
+
+/* This is the in between header formating */
+.centertext{
+  text-align: center;
+  text-decoration-color: black;
+  font-size: 1.5em;
+}
+
+/* The are the location name formatting */
+.tagheader{
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* This is the generalised formatting for the footer. */
+.footerText{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+/* This is the part for the copyright sign in the footer. */
+.copyright{
+  margin: 0!important;
+}
+
+/* This is the header image that has been formatted like the features image formatting but specific for causes page. */
+.headercauses{
+  height: 45vh;
+  background: url(imgpage2/causes.jpg) center center no-repeat fixed;
+  background-size: cover;
+  background-color: rgb(200, 200,200);
+  display: grid;
+  padding-bottom: 20px; 
+}
+
+/* This is for the small circle index with 4 items on the causes page. */
+.anchor{
+  border-radius: 50%;
+  padding: 10px;
+  justify-self: center;
+}
+
+/* This is the header image that has been formatted like the features image formatting but specific for contact us page. */
+.headercontactus{
+  height: 40vh;
+  background: url(imgpage5/contactus.jpg) center center no-repeat fixed;
+  background-size: cover;
+  background-color: rgb(200, 200,200);
+  display: grid;
+  padding-bottom: 20px; 
+}
+
+/* This is the formatting for the main content of the causes page. */
+.causesmain{
+  border-radius: 50%;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* This is the header image that has been formatted like the features image formatting but specific for gallery page. */
+.headergallery{
+  height: 40vh;
+  background: url(imgpage3/gallery.jpg) center 20% no-repeat fixed;
+  background-size: cover;
+  background-color: rgb(200, 200,200);
+  display: grid;
+  padding-bottom: 20px; 
+}
+
+/* This is the header image that has been formatted like the features image formatting but specific for team page. */
+.headerteam{
+  height: 50vh;
+  background: url(imgpage4/team.jpg) center 50% no-repeat fixed;
+  background-size: cover;
+  background-color: rgb(200, 200,200);
+  display: grid;
+  padding-bottom: 20px; 
+}
+
+/* for the page explanation part in the page. */
+.pageexplain{
+  font-size: 1.75rem;
+}
+
+/* general content on cause page styling */
+.cause{
+  font-size: 1.45rem;
+  font-weight: 400;
+  color: black;
+}
+
+.causetest{
+  text-align: center;
+  padding: 10px;
+}
+/* 
+.galTest{
+  display: block;
+  margin: auto auto; 
+  padding: 0px 20px 0px 100px;
+}
+
+.galtest{
+  display: block;
+  margin: auto auto; 
+  padding: 0px 100px 0px 20px;
+} */
+
+.helpdeskButton{
+  text-align: center;
+  font-size: 1.5rem;
+  border-color: #44C1DB;
+  background-color: #44C1DB;
+  padding: 10px 30px;
+  margin: 0;
+  position: absolute;
+  top: 46%;
+  left: 87%;
+}
+
+.navigationHelpdesk{
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #000;
+  display: inline-block;
+  transition: all 0.7s
+}
+
+.navigationHelpdesk:hover{
+  color: #fff;
+  background: #333;
+  transform: translateX(0) translateY(-5px);
+}

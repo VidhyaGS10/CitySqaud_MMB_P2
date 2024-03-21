@@ -1,0 +1,61 @@
+! version = 2.0
+
++ (hello)
+- Hi, what is your name?
+
++ (hi)
+- Hi, what is your name?
+
++ my name is *
+- Nice to meet you <star>
+- Nice meeting you <star>
+
++ im *
+- Nice to meet you <star>
+- Nice meeting you <star>
+
++ i am *
+- Nice to meet you <star>
+- Nice meeting you <star>
+
++ (nice meeting you too)
+- thanks for talking to me
+- glad you have taken the time to chat
+- no worries thanks for making the time to chat
+- no worriesthanks for making the time to chat
+- No worries
+
++ (nice to meet you too)
+- thanks for talking to me
+- glad you have taken the time to chat
+- no worries thanks for making the time to chat
+- no worries
+
++ (you as well)
+- thanks for talking to me
+- glad you have taken the time to chat
+- no worries thanks for making the time to chat
+- no worries
+
++ (hows that)
+- much Better thanks
+- thank you much clearer
+
++ (sorry)
+- no problem
+- no worries whatsoever
+
++ (no problem)
+- bye for now
+- have a great day
+
++ *
+- Can you say that again?
+- Your voice is a bit hard to hear
+- Maybe speak close to the mic?
+- Speak a bit closer to the mic please
+
++ thank you
+- You are welcome
+- Thank you for talking to me
+- Have a great day
